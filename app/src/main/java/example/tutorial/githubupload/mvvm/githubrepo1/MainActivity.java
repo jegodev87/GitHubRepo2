@@ -15,5 +15,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "Edit Text added", Toast.LENGTH_SHORT).show();
         Toast.makeText(this, "Added a button", Toast.LENGTH_SHORT).show();
         Toast.makeText(this, "Added a textview", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Added one", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Added one again", Toast.LENGTH_SHORT).show();
     }
 }
