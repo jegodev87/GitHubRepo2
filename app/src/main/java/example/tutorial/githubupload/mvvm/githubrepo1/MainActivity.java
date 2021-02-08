@@ -40,9 +40,9 @@ import example.tutorial.githubupload.mvvm.githubrepo1.models.ContentEntity;
 public class MainActivity extends AppCompatActivity {
 
     private static final int PICK_VIDEO = 1;
-    DatabaseReference databaseReference;
-    ContentEntity contentEntity;
-    UploadTask uploadTask;
+    private DatabaseReference databaseReference;
+    private ContentEntity contentEntity;
+    private UploadTask uploadTask;
     private VideoView videoView;
     private AppCompatEditText title, search;
     private ProgressBar progressBar;
