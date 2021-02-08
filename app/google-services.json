@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "659010936014",
+    "firebase_url": "https://assettrack-a47ea.firebaseio.com",
+    "project_id": "assettrack-a47ea",
+    "storage_bucket": "assettrack-a47ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659010936014:android:6c1cbf94d928cfcec1049f",
+        "android_client_info": {
+          "package_name": "example.tutorial.githubupload.mvvm.githubrepo1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659010936014-6h1cgssqp5pfgbqq7fcg5ssg5d9u4sio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUK8yqy7KR15WNTMKw3oVQlQLcfdcoWQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659010936014-6h1cgssqp5pfgbqq7fcg5ssg5d9u4sio.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
