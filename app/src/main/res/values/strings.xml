@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">GitHubRepo1</string>
+    <string name="label">MyDrive</string>
 </resources>

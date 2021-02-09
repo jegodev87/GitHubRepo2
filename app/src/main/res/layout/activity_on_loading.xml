@@ -4,24 +4,46 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="top|left"
+    android:padding="16sp"
     android:orientation="vertical"
     tools:context=".OnLoadingActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi there"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Upload your personal files"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
 
     <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="16sp"
         android:id="@+id/upload"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
-        android:text="Upload"
+        android:text="Upload file"
+        android:textAllCaps="true"
         android:textColor="@android:color/white" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="16sp"
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
-        android:text="View"
+        android:text="View Files"
+        android:textAllCaps="true"
         android:textColor="@android:color/white" />
 
 

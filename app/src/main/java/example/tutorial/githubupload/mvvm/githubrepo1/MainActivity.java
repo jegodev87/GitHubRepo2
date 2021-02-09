@@ -65,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
         pickVideo = findViewById(R.id.pick_video);
         videoView = findViewById(R.id.videoView);
         progressBar = findViewById(R.id.progressBar);
+        progressBar.setProgress(0);
+        progressBar.setMax(100);
         mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);
@@ -140,10 +142,18 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
                     progressBar.setVisibility(View.VISIBLE);
-                    double progress = (100.0 * taskSnapshot.getBytesTransferred());
+                    double progress = (100.0 * taskSnapshot.getBytesTransferred()) / taskSnapshot.getTotalByteCount();
                     progressBar.setProgress((int) progress, true);
 
 
+                }
+            }).addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
+                    if (task.isSuccessful()) {
+                        startActivity(new Intent(getApplicationContext(), OnLoadingActivity.class));
+                        finish();
+                    }
                 }
             }).addOnPausedListener(new OnPausedListener<UploadTask.TaskSnapshot>() {
                 @Override
