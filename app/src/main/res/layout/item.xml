@@ -15,16 +15,19 @@
 
 
         <TextView
+            android:layout_margin="6dp"
             android:id="@+id/item_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textsize="20sp" />
+            android:textSize="20sp" />
 
 
         <com.google.android.exoplayer2.ui.PlayerView
             android:id="@+id/exoplayerView"
             android:layout_width="match_parent"
             android:layout_height="250dp"
+            app:use_artwork="true"
+            app:use_controller="true"
             app:resize_mode="fill">
 
             <ProgressBar
